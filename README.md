@@ -42,4 +42,4 @@ The system maps out organization workflows by handling core entities and special
 
 1. Clone the repository:
    ```bash
-   git clone [https://github.com/moeezahmad-tech/DevTrack](https://github.com/moeezahmad-tech/DevTrack)
+   git clone https://github.com/moeezahmad-tech/DevTrack
