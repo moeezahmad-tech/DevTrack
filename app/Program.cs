@@ -1,8 +1,8 @@
 using System;
 using System.Windows.Forms;
-using CompanyManagement.Forms;
+using DevTrack.UI.Forms;
 
-namespace CompanyManagement
+namespace DevTrack
 {
     static class Program
     {
