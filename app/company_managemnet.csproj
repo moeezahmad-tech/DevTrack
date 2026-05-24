@@ -95,48 +95,54 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="AllBLL.cs" />
-    <Compile Include="DBConnection.cs" />
-    <Compile Include="DepartmentDAL.cs" />
-    <Compile Include="EmployeeDAL.cs" />
-    <Compile Include="EmployeeDashboard.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="HODDashboard.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="HomePanels.cs">
-      <SubType>Component</SubType>
-    </Compile>
-    <Compile Include="LoginForm.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="ManageDepartmentsPanel.cs">
-      <SubType>Component</SubType>
-    </Compile>
-    <Compile Include="ManageEmployeesPanel.cs">
-      <SubType>Component</SubType>
-    </Compile>
-    <Compile Include="ManageProjectsPanel.cs">
-      <SubType>Component</SubType>
-    </Compile>
-    <Compile Include="ManageReportsPanel.cs">
-      <SubType>Component</SubType>
-    </Compile>
-    <Compile Include="ManageTasksPanel.cs">
-      <SubType>Component</SubType>
-    </Compile>
-    <Compile Include="Models.cs" />
-    <Compile Include="PersonDAL.cs" />
     <Compile Include="Program.cs" />
-    <Compile Include="ProjectTaskDAL.cs" />
+    <Compile Include="DataAccess\Database\DBConnection.cs" />
+    <Compile Include="DataAccess\Models\Models.cs" />
+    <Compile Include="DataAccess\DAL\DepartmentDAL.cs" />
+    <Compile Include="DataAccess\DAL\EmployeeDAL.cs" />
+    <Compile Include="DataAccess\DAL\PersonDAL.cs" />
+    <Compile Include="DataAccess\DAL\ProjectTaskDAL.cs" />
+    <Compile Include="DataAccess\DAL\ReportDAL.cs" />
+    <Compile Include="BusinessLogic\Managers\DepartmentManager.cs" />
+    <Compile Include="BusinessLogic\Managers\EmployeeManager.cs" />
+    <Compile Include="BusinessLogic\Managers\HeadOfDeptManager.cs" />
+    <Compile Include="BusinessLogic\Managers\PersonManager.cs" />
+    <Compile Include="BusinessLogic\Managers\ProjectManager.cs" />
+    <Compile Include="BusinessLogic\Managers\ReportManager.cs" />
+    <Compile Include="BusinessLogic\Managers\TaskManager.cs" />
+    <Compile Include="UI\Utilities\UITheme.cs" />
+    <Compile Include="UI\Forms\LoginForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\Forms\EmployeeDashboard.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\Forms\HODDashboard.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\Panels\HomePanels.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="UI\Panels\ManageDepartmentsPanel.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="UI\Panels\ManageEmployeesPanel.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="UI\Panels\ManageProjectsPanel.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="UI\Panels\ManageReportsPanel.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="UI\Panels\ManageTasksPanel.cs">
+      <SubType>Component</SubType>
+    </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="ReportDAL.cs" />
-    <Compile Include="UITheme.cs" />
-    <EmbeddedResource Include="EmployeeDashboard.resx">
+    <EmbeddedResource Include="UI\Forms\EmployeeDashboard.resx">
       <DependentUpon>EmployeeDashboard.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="HODDashboard.resx">
+    <EmbeddedResource Include="UI\Forms\HODDashboard.resx">
       <DependentUpon>HODDashboard.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
